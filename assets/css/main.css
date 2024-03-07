@@ -1,0 +1,18 @@
+:root {
+  --sidenav-width: 200px;
+}
+
+@font-face {
+  font-family: "Chinyen";
+  font-weight: normal;
+  src: url("/font/Chinyen.ttf") format("truetype");
+}
+
+.chinyen {
+  font-style: normal;
+  font-family: "Chinyen", cursive!important;
+}
+
+.nav-active {
+  @apply bg-gray-300/50;
+}
