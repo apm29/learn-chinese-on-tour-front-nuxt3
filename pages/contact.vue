@@ -12,11 +12,11 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="contact-us-page z-[-1]">
-    <div class="absolute z-[-1] top-[-45rem] left-[-45rem] overflow-visible rounded-full bg-yellow-500/30 w-[64rem] h-[64rem]" />
-    <div class="absolute z-[-1] top-1/2 right-[-100rem] overflow-visible rounded-full bg-lime-500/30 w-[128rem] h-[128rem]"/>
-    <div class="absolute z-[-1] top-[-3rem] right-[-3rem] overflow-visible rounded-full bg-orange-500/30 w-[18rem] h-[18rem]"/>
-    <div class="absolute z-[-1] top-[80vh] right-[-70rem] overflow-visible rounded-full bg-red-500/30 w-[196rem] h-[196rem]"/>
+  <div class="contact-us-page ">
+    <div class="absolute  top-[-45rem] left-[-45rem] overflow-visible rounded-full bg-yellow-500/30 w-[64rem] h-[64rem]" />
+    <div class="absolute  top-1/2 right-[-100rem] overflow-visible rounded-full bg-lime-500/30 w-[128rem] h-[128rem]"/>
+    <div class="absolute  top-[-3rem] right-[-3rem] overflow-visible rounded-full bg-orange-500/30 w-[18rem] h-[18rem]"/>
+    <div class="absolute  top-[80vh] right-[-70rem] overflow-visible rounded-full bg-red-500/30 w-[196rem] h-[196rem]"/>
 
 
     <h1 class="text-white text-3xl text-center font-bold mb-6">

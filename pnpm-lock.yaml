@@ -6,6 +6,7 @@ specifiers:
   '@nuxt/ui': ^2.14.2
   '@nuxtjs/i18n': ^8.1.1
   '@nuxtjs/tailwindcss': ^6.11.4
+  '@tailwindcss/typography': ^0.5.10
   '@vee-validate/nuxt': ^4.12.5
   '@vueuse/nuxt': ^10.9.0
   dayjs-nuxt: ^2.1.9
@@ -24,6 +25,7 @@ devDependencies:
   '@nuxt/ui': 2.14.2_nuxt@3.10.3+vue@3.4.21
   '@nuxtjs/i18n': 8.1.1_vue@3.4.21
   '@nuxtjs/tailwindcss': 6.11.4
+  '@tailwindcss/typography': 0.5.10
   '@vee-validate/nuxt': 4.12.5_vue@3.4.21
   '@vueuse/nuxt': 10.9.0_nuxt@3.10.3+vue@3.4.21
   dayjs-nuxt: 2.1.9
@@ -2086,6 +2088,17 @@ packages:
     dependencies:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.4.1
+    dev: true
+
+  /@tailwindcss/typography/0.5.10:
+    resolution: {integrity: sha512-Pe8BuPJQJd3FfRnm6H0ulKIGoMEQS+Vq01R6M5aCrFB/ccR/shT+0kXLjouGC1gFLm9hopTFN+DMP0pfwRWzPw==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      postcss-selector-parser: 6.0.10
     dev: true
 
   /@tailwindcss/typography/0.5.10_tailwindcss@3.4.1:

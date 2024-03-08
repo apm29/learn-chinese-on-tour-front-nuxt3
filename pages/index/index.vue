@@ -1,7 +1,7 @@
 <template>
   <div>
     <DashboardPublicityFigure></DashboardPublicityFigure>
-    <div class="px-5 md:px-24">
+    <div class="px-5 md:px-16 lg:px-24">
       <h3 class="pl-2 text-2xl text-dark-600 text-left font-bold my-16">
         <i i-carbon-crowd-report class="text-sky-500 inline-block vertical-text-top" />
         {{ $t("Meet Our Full-time Mandarin Teachers On tour in Hangzhou") }}
@@ -35,7 +35,6 @@
       <div class="mx-auto sm:max-w-[24rem] max-w-[20rem]">
         <FormContactUs/>
       </div>
-      <div class="h-32" />
     </div>
   </div>
 </template>

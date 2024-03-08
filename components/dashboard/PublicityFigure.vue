@@ -4,7 +4,7 @@ const { travelToContact, ContactTypes } = useContact()
 
 <template>
   <div class="relative">
-    <img src="/dashboard-bg.jpeg" class="bg-img object-cover grayscale-[100]">
+    <img src="/dashboard-bg.jpeg" class="bg-img object-cover grayscale-[100] z-0">
     <div
       class="container-cover absolute top-0 left-0 bottom-0 right-0 flex flex-col items-center justify-center bg-gray-100/55 dark:bg-gray-900/55 gap-y-3">
       <h2 class="text-3xl text-dark-300 text-center max-w-[80%] font-extrabold">

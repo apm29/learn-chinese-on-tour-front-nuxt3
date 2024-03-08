@@ -39,7 +39,7 @@ export default defineNuxtConfig({
   },
 
   ui: {
-    icons: ['mdi', 'heroicons', 'carbon'],
+    icons: ['mdi', 'heroicons', 'carbon', 'twemoji'],
   },
 
   components: [

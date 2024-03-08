@@ -3,11 +3,11 @@
     <AppLogo></AppLogo>
     <UDivider class="my-3" />
     <template v-for="link of links">
-      <UButton v-if="!link.children" variant="ghost" class="nav-button w-full" color="gray" :icon="link.icon"
+      <UButton v-if="!link.children" :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray" :icon="link.icon"
         :label="link.label" :to="link.to" :class="isMainMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
       </UButton>
-      <UPopover v-else :popper="{ arrow: true, placement: 'right' }">
-        <UButton variant="ghost" class="w-full" color="gray" :icon="link.icon" :label="link.label">
+      <UPopover v-else :popper="{ arrow: true, placement: 'right' }" mode="hover">
+        <UButton :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray" :icon="link.icon" :label="link.label">
         </UButton>
         <template #panel>
           <div class="flex flex-col">
@@ -54,7 +54,7 @@ const links = [
       {
         label: 'Online class',
         icon: 'i-mdi-television-classic',
-        to: '/course/online',
+        to: '/course/online/hsk',
       },
       {
         label: 'Offline class',
@@ -120,6 +120,14 @@ function isMainMenu(to, $route) {
 }
 function isSubMenu(to, $route) {
   return to === $route.path
+}
+
+const navButtonUi = {
+  color:{
+    gray:{
+      ghost:'text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-primary-200 dark:hover:bg-primary-800 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 focus:text-primary mb-2'
+    }
+  }
 }
 </script>
 
