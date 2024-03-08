@@ -1,5 +1,6 @@
 <template>
   <main class="lcot-app">
+    <NavTop class="lcot-nav-top"></NavTop>
     <main class="lcot-main-content">
       <slot></slot>
     </main>
@@ -21,16 +22,18 @@
 }
 
 .lcot-nav-left {
-  @apply fixed left-0 top-0;
+  @apply hidden sm:block sm:fixed left-0 top-0;
   width: var(--sidenav-width);
 }
 
+.lcot-nav-top {
+  @apply static sm:hidden;
+}
+
 .lcot-main-content {
-  padding-left: var(--sidenav-width);
-  @apply bg-gray-50 dark:bg-gray-900 min-h-screen;
+  @apply bg-gray-50 dark:bg-gray-900 min-h-screen pl-0 sm:pl-[var(--sidenav-width)];
 }
 .lcot-main-footer {
-  @apply bg-gray-50 dark:bg-gray-900 pt-12;
-  padding-left: var(--sidenav-width);
+  @apply bg-gray-50 dark:bg-gray-900 pt-12 pl-0 sm:pl-[var(--sidenav-width)];
 }
 </style>
