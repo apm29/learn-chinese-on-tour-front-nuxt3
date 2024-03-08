@@ -21,6 +21,8 @@
     </template>
     <UDivider class="my-3" />
     <AppLocaleSwitch></AppLocaleSwitch>
+    <div class="flex-grow"></div>
+    <AppDarkModeSwitch></AppDarkModeSwitch>
   </aside>
 </template>
 
@@ -134,7 +136,7 @@ const navButtonUi = {
 
 <style scoped>
 .lcot-side-nav {
-  @apply h-screen px-2 py-3 border-r border-gray-300/50 dark:border-gray-700/60 overflow-y-auto overflow-x-visible dark:bg-gray-800/50 bg-white;
+  @apply h-screen px-2 py-3 border-r border-gray-300/50 dark:border-gray-700/60 overflow-y-auto overflow-x-visible dark:bg-gray-800/50 bg-white flex flex-col;
   width: var(--sidenav-width);
 }
 .nav-button {
