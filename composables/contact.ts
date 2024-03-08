@@ -8,7 +8,7 @@ export function useContact() {
   const router = useRouter()
   function travelToContact(type: ContactTypes) {
     router.push({
-      path: '/contact-us',
+      path: '/contact',
       query: {
         type,
       },

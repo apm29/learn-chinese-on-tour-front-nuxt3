@@ -125,7 +125,7 @@ function isSubMenu(to, $route) {
 
 <style scoped>
 .lcot-side-nav {
-  @apply h-screen px-2 py-3 border-r border-gray-300/50 dark:border-gray-700/60 overflow-y-auto overflow-x-visible dark:bg-gray-600/50;;
+  @apply h-screen px-2 py-3 border-r border-gray-300/50 dark:border-gray-700/60 overflow-y-auto overflow-x-visible dark:bg-gray-800/50;;
   width: var(--sidenav-width);
 }
 .nav-button {
