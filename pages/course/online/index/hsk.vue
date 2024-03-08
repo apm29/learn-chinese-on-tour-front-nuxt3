@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-grow overflow-y-auto">
+  <div class="flex-grow overflow-y-auto p-4 md:px-12 lg:max-w-[1000px] mx-auto">
     <article class="pt-10 mx-auto prose prose-stone dark:prose-invert">
       <h1>HSK Test Preparation Courses</h1>
       <p>
