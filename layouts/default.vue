@@ -22,7 +22,7 @@
 }
 
 .lcot-nav-left {
-  @apply hidden sm:block sm:fixed left-0 top-0;
+  @apply hidden sm:flex sm:fixed left-0 top-0;
   width: var(--sidenav-width);
 }
 

@@ -3,11 +3,13 @@
     <AppLogo></AppLogo>
     <UDivider class="my-3" />
     <template v-for="link of links">
-      <UButton v-if="!link.children" :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray" :icon="link.icon"
-        :label="link.label" :to="link.to" :class="isMainMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
+      <UButton v-if="!link.children" :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray"
+        :icon="link.icon" :label="link.label" :to="link.to"
+        :class="isMainMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
       </UButton>
       <UPopover v-else :popper="{ arrow: true, placement: 'right' }" mode="hover">
-        <UButton :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray" :icon="link.icon" :label="link.label">
+        <UButton :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray" :icon="link.icon"
+          :label="link.label">
         </UButton>
         <template #panel>
           <div class="flex flex-col">
@@ -20,9 +22,12 @@
       </UPopover>
     </template>
     <UDivider class="my-3" />
-    <AppLocaleSwitch></AppLocaleSwitch>
     <div class="flex-grow"></div>
-    <AppDarkModeSwitch></AppDarkModeSwitch>
+    <div class="flex">
+      <AppLocaleSwitch></AppLocaleSwitch>
+      <div class="flex-grow"></div>
+      <AppDarkModeSwitch></AppDarkModeSwitch>
+    </div>
   </aside>
 </template>
 
@@ -118,7 +123,7 @@ const links = [
 ]
 
 function isMainMenu(to, $route) {
-  if(to == '/') return to === $route.path
+  if (to == '/') return to === $route.path
   return to === $route.path || $route.path.startsWith(to)
 }
 function isSubMenu(to, $route) {
@@ -126,9 +131,9 @@ function isSubMenu(to, $route) {
 }
 
 const navButtonUi = {
-  color:{
-    gray:{
-      ghost:'text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-primary-200 dark:hover:bg-primary-800 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 focus:text-primary mb-2'
+  color: {
+    gray: {
+      ghost: 'text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-primary-200 dark:hover:bg-primary-800 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 focus:text-primary mb-2'
     }
   }
 }
@@ -139,6 +144,7 @@ const navButtonUi = {
   @apply h-screen px-2 py-3 border-r border-gray-300/50 dark:border-gray-700/60 overflow-y-auto overflow-x-visible dark:bg-gray-800/50 bg-white flex flex-col;
   width: var(--sidenav-width);
 }
+
 .nav-button {
   @apply focus:text-primary mb-2;
 }

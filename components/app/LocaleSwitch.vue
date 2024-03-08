@@ -46,7 +46,7 @@ const localeLabel = computed(() => {
 
 <template>
   <ClientOnly>
-    <UDropdown v-model="locale" :items="items" mode="hover" :popper="{ placement: 'right' }">
+    <UDropdown v-model="locale" :items="items" mode="click" :popper="{ placement: 'right' }">
       <UButton color="white" :label="localeLabel" trailing-icon="i-heroicons-chevron-down-20-solid" />
     </UDropdown>
   </ClientOnly>

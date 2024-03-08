@@ -4,15 +4,15 @@
       <UIcon name="i-mdi-menu" />
       Learn Chinese On Tour
     </UButton>
-    <USlideover v-model="showMenu" :ui="{width: 'w-auto',wrapper: 'fixed inset-0 flex z-50 w-0',}" side="left" :overlay="false">
+    <USlideover v-model="showMenu" :ui="{ width: 'w-auto', wrapper: 'fixed inset-0 flex z-50 w-0', }" side="left"
+      :overlay="false">
 
       <aside class="lcot-top-nav">
         <AppLogo></AppLogo>
         <UDivider class="my-3" />
         <template v-for="link of links">
-          <UButton :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray"
-            :icon="link.icon" :label="link.label" :to="link.to"
-            :class="isMainMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
+          <UButton :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray" :icon="link.icon"
+            :label="link.label" :to="link.to" :class="isMainMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
           </UButton>
           <div class="flex flex-col pl-8" v-if="link.children">
             <UButton v-for="subLink of link.children" variant="ghost" color="gray" :icon="subLink.icon"
@@ -22,9 +22,12 @@
           </div>
         </template>
         <UDivider class="my-3" />
-        <AppLocaleSwitch></AppLocaleSwitch>
         <div class="flex-grow"></div>
-        <AppDarkModeSwitch></AppDarkModeSwitch>
+        <div class="flex">
+          <AppLocaleSwitch></AppLocaleSwitch>
+          <div class="flex-grow"></div>
+          <AppDarkModeSwitch></AppDarkModeSwitch>
+        </div>
       </aside>
     </USlideover>
   </div>
@@ -137,7 +140,7 @@ const navButtonUi = {
 }
 
 const route = useRoute()
-watch(()=>route.fullPath, () => {
+watch(() => route.fullPath, () => {
   toggleMenu(false)
 })
 </script>
