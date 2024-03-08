@@ -55,6 +55,7 @@ export default defineNuxtConfig({
     "dayjs-nuxt",
     "@vee-validate/nuxt",
     "@nuxt/ui",
-    "@nuxt/content"
+    "@nuxt/content",
+    '@nuxtjs/tailwindcss'
   ]
 })
