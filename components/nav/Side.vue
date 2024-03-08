@@ -20,6 +20,7 @@
       </UPopover>
     </template>
     <UDivider class="my-3" />
+    <AppLocaleSwitch></AppLocaleSwitch>
   </aside>
 </template>
 
@@ -83,27 +84,27 @@ const links = [
   {
     label: 'About Chinese',
     icon: 'i-mdi-post',
-    to: '/live',
+    to: '/chinese',
     children: [
       {
         label: 'One Sentence A Day',
         icon: 'i-mdi-message',
-        to: '/china/daily'
+        to: '/chinese/daily-sentence'
       },
       {
         label: 'Tongue Twisters',
         icon: 'i-mdi-thumb-up',
-        to: '/china/tongue'
+        to: '/chinese/tongue-twist'
       },
       {
         label: 'Traditional Culture',
         icon: 'i-mdi-silverware',
-        to: '/china/culture'
+        to: '/chinese/traditional-culture'
       },
       {
         label: 'Spoken Chinese',
         icon: 'i-mdi-emoticon-excited-outline',
-        to: '/china/spoken'
+        to: '/chinese/spoken-chinese'
       }
     ]
   },
@@ -133,7 +134,7 @@ const navButtonUi = {
 
 <style scoped>
 .lcot-side-nav {
-  @apply h-screen px-2 py-3 border-r border-gray-300/50 dark:border-gray-700/60 overflow-y-auto overflow-x-visible dark:bg-gray-800/50;;
+  @apply h-screen px-2 py-3 border-r border-gray-300/50 dark:border-gray-700/60 overflow-y-auto overflow-x-visible dark:bg-gray-800/50 bg-white;
   width: var(--sidenav-width);
 }
 .nav-button {

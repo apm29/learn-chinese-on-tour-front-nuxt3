@@ -2,12 +2,11 @@
   <main class="lcot-app">
     <main class="lcot-main-content">
       <slot></slot>
-      <div class="h-32"></div>
-      <footer>
-        <NavFooter />
-      </footer>
     </main>
     <NavSide class="lcot-nav-left"></NavSide>
+    <footer class="lcot-main-footer">
+      <NavFooter />
+    </footer>
   </main>
 </template>
 
@@ -28,6 +27,10 @@
 
 .lcot-main-content {
   padding-left: var(--sidenav-width);
-  @apply bg-gray-50 dark:bg-gray-900 min-h-screen ;
+  @apply bg-gray-50 dark:bg-gray-900 min-h-screen;
+}
+.lcot-main-footer {
+  @apply bg-gray-50 dark:bg-gray-900 pt-12;
+  padding-left: var(--sidenav-width);
 }
 </style>

@@ -42,6 +42,13 @@ export default defineNuxtConfig({
     icons: ['mdi', 'heroicons', 'carbon', 'twemoji'],
   },
 
+  i18n: {
+    strategy: 'no_prefix',
+    locales: ["en", "zh", "fr", "es"], //配置语种
+    defaultLocale: 'en', // 默认语种
+    vueI18n: './i18n.config.ts', // 通过vueI18n配置
+  },
+
   components: [
     {
       path: '~/components',
