@@ -93,7 +93,7 @@ definePageMeta({
         all over the world,and hope we meet at here, exchange different interesting cultures, help you to fall in love
         with and speak Chinese well.
       </p>
-      <AvatarImage src="/team/pic06.png" alt="Drizzle" />
+      <UImage src="/team/pic06.png" alt="Drizzle" />
     </article>
   </div>
 </template>

@@ -135,6 +135,11 @@ const navButtonUi = {
     }
   }
 }
+
+const route = useRoute()
+watch(()=>route.fullPath, () => {
+  toggleMenu(false)
+})
 </script>
 
 <style scoped>
