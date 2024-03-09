@@ -1,5 +1,6 @@
 <script setup>
-const { data: teachers } = useFetch('/api/teachers')
+// const { data: teachers } = useFetch('/api/teachers')
+import teachers from '~~/data/teachers.json'
 </script>
 
 <template>
