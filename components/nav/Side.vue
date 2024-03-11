@@ -5,17 +5,17 @@
     <template v-for="link of links">
       <UButton v-if="!link.children" :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray"
         :icon="link.icon" :label="$t(link.label)" :to="link.to"
-        :class="isMainMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
+        :class="isMainMenu(link, $route) ? 'nav-active' : 'nav-inactive'">
       </UButton>
       <UPopover v-else :popper="{ arrow: true, placement: 'right' }" mode="hover">
         <UButton :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray" :icon="link.icon"
-          :label="$t(link.label)">
+          :label="$t(link.label)" :class="isMainMenu(link, $route) ? 'nav-active' : 'nav-inactive'">
         </UButton>
         <template #panel>
           <div class="flex flex-col">
             <UButton v-for="subLink of link.children" variant="ghost" color="gray" :icon="subLink.icon"
               :label="$t(subLink.label)" :to="subLink.to" class="nav-button"
-              :class="isSubMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
+              :class="isSubMenu(subLink.to, $route) ? 'nav-active' : 'nav-inactive'">
             </UButton>
           </div>
         </template>
@@ -122,10 +122,11 @@ const links = [
   },
 ]
 
-function isMainMenu(to, $route) {
+function isMainMenu({ to, children }, $route) {
   if (to == '/') return to === $route.path
-  return to === $route.path || $route.path.startsWith(to)
+  return to === $route.path || $route.path.startsWith(to) || children?.some(child => isMainMenu(child, $route))
 }
+  
 function isSubMenu(to, $route) {
   return to === $route.path
 }

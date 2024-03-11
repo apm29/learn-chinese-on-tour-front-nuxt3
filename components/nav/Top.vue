@@ -22,7 +22,7 @@
           <div class="flex flex-col pl-8" v-if="link.children">
             <UButton v-for="subLink of link.children" variant="ghost" color="gray" :icon="subLink.icon"
               :label="$t(subLink.label)" :to="subLink.to" class="nav-button"
-              :class="isSubMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
+              :class="isSubMenu(subLink.to, $route) ? 'nav-active' : 'nav-inactive'">
             </UButton>
           </div>
         </template>
@@ -128,6 +128,7 @@ function isMainMenu(to, $route) {
   return to === $route.path || $route.path.startsWith(to)
 }
 function isSubMenu(to, $route) {
+  console.log("🚀 ~ isSubMenu ~ to, $route:", to, $route.path)
   return to === $route.path
 }
 

@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-
+  
   app: {
     head: {
       title: '旅学中文',
@@ -63,6 +63,8 @@ export default defineNuxtConfig({
     "@vee-validate/nuxt",
     "@nuxt/ui",
     "@nuxt/content",
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    "@nuxtjs/sitemap",
+    '@nuxtjs/robots',
   ]
 })
