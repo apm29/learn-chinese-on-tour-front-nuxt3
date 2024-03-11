@@ -6,7 +6,7 @@ const { data: teachers } = useFetch('/api/teachers')
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-x-4 gap-y-12">
     <div v-for="teacher of teachers" :key="teacher.name"
       class="bg-white dark:bg-gray-800 rounded-lg px-4 pt-3 pb-6 flex flex-col items-start duration-300 transition-all text-left border-2 border-transparent hover:border-gray-200 dark:hover:border-gray-600 hover:opacity-90 hover:shadow-2xl dark:shadow-gray-600">
-      <UAvatar :src="teacher.pic" size="3xl" class="self-center mb-4 shadow-xl drop-shadow-lg" />
+      <UAvatar :src="teacher.pic" size="3xl" class="self-center mb-4 shadow-xl drop-shadow-lg dark:shadow-slate-600 dark:drop-shadow-slate-600" />
       <h3 class="tag text-xs text-sky-500 dark:text-sky-600 mb-2 flex items-center gap-2">
         <span class="inline-block w-[5px] h-full rounded-r-2xl bg-sky-500" />
         {{ $t(teacher.tag) }}

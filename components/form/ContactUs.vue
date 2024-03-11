@@ -85,6 +85,9 @@ const inputUi = {
       outline: 'shadow-sm bg-white dark:bg-blue-200/50 text-gray-900 dark:text-white ring-1 ring-inset ring-primary-300 dark:ring-primary-300 focus:ring-2 focus:ring-primary-700 dark:focus:ring-primary-400'
     },
   },
+  variant: {
+    outline: 'shadow-sm bg-white dark:bg-blue-200/50 text-gray-900 dark:text-white ring-2 ring-{color}-500 dark:ring-{color}-400 focus:ring-4 focus:ring-{color}-500 dark:focus:ring-{color}-400'
+  },
   placeholder: 'placeholder-gray-300 dark:placeholder-gray-100/50',
 }
 
@@ -93,6 +96,6 @@ const submitButtonUi = {
     primary: {
       solid: 'shadow-sm text-white dark:text-white bg-primary-300 hover:bg-primary-400 disabled:bg-gray-900 dark:bg-primary-500 dark:hover:bg-primary-700 dark:disabled:bg-white focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400'
     }
-  }
+  },
 }
 </script>

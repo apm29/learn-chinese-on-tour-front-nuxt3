@@ -7,6 +7,7 @@
     <NavSide class="lcot-nav-left"></NavSide>
     <footer class="lcot-main-footer">
       <NavFooter />
+      <AppSiteInfo></AppSiteInfo>
     </footer>
   </main>
 </template>
