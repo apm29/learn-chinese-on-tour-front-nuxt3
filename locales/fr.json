@@ -1,4 +1,6 @@
 {
+  "Learn Chinese On Tour": "Apprenez le chinois en tournée",
+
   "message": "français",
   "home": "Accueil",
   "about-us": "À propos de nous",
@@ -21,5 +23,35 @@
   "Get Started": "Commencer",
   "1 on 1 Class": "Cours individuel",
   "Meet Our Full-time Mandarin Teachers On tour in Hangzhou": "Rencontrez nos professeurs de mandarin à plein temps en tournée à Hangzhou",
-  "Why Us": "Pourquoi nous"
+  "Why Us": "Pourquoi nous",
+
+  "Home": "Accueil",
+  "About Us": "À propos de nous",
+  "Our service": "Nos services",
+  "Our team": "Notre équipe",
+  "Course on tours": "Cours sur les visites",
+  "Online class": "Cours en ligne",
+  "Offline class": "Cours hors ligne",
+  "Live in Hangzhou": "Vivre à Hangzhou",
+  "School in Hangzhou": "École à Hangzhou",
+  "Tours in Hangzhou": "Visites à Hangzhou",
+  "About Chinese": "À propos du chinois",
+  "One Sentence A Day": "Une phrase par jour",
+  "Tongue Twisters": "Virelangues",
+  "Traditional Culture": "Culture traditionnelle",
+  "Spoken Chinese": "Chinois parlé",
+  "Contact Us": "Nous contacter",
+
+  "English/Chinese Teacher": "Enseignant d'anglais/chinois",
+  "French/Chinese Teacher": "Enseignant de français/chinois",
+  "Spanish/Chinese Teacher": "Enseignant d'espagnol/chinois",
+  "Students Says...": "Ce que disent les étudiants...",
+
+  "Why Us#1": "Flexibilité - vous décidez où et quand vous souhaitez avoir votre cours avec notre tuteur en mandarin privé.",
+  "Why Us#2": "Matériel d'apprentissage du mandarin - accès à tous nos livres de cours et cours en ligne.",
+  "Why Us#3": "Nous proposons des cours de base en ligne et découvrons la vraie culture hors ligne.",
+  "Why Us#4": "Des enseignants distingués et expérimentés - tous nos tuteurs sont certifiés par le ministère de l'Éducation. Ils sont tous hautement formés et expérimentés dans l'organisation et l'enseignement individuels ainsi que dans le partage de la culture pour les étudiants intéressés et passionnés. Ils ont tous obtenu un certificat de guide touristique.",
+  "Why Us#5": "Nous sommes une véritable entreprise locale d'apprentissage du chinois. lcot-hangzhou.com est entièrement détenue et exploitée par l'agence internationale de coopération éducative de Hangzhou, qui est une entreprise d'éducation légitime agréée par le gouvernement.",
+
+  "Get a free One-on-One trial lesson": "Obtenez une leçon d'essai individuelle gratuite"
 }

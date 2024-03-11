@@ -11,7 +11,7 @@ definePageMeta({
 <template>
   <div class="p-4 md:px-12 lg:max-w-[1000px] mx-auto text-gray-800/80 dark:text-gray-200/80">
     <article>
-      <h1>Rebecca Yang <small>(English<i i-twemoji-flag-united-kingdom />)</small></h1>
+      <h1>Rebecca Yang <small>(English<UIcon class="align-middle" name="i-twemoji-flag-united-kingdom" />)</small></h1>
       <p>
         Hello everyone, it ‘s a pleasure to have friends from afar.Confucius sent out such an invitation as early as
         2500
@@ -28,7 +28,7 @@ definePageMeta({
         forward to seeing you !
       </p>
       <UImage src="/team/pic01.png" alt="Rebecca Yang" />
-      <h1>Keran Li <small>(French<i i-twemoji-flag-france />)</small></h1>
+      <h1>Keran Li <small>(French<UIcon class="align-middle" name="i-twemoji-flag-france" />)</small></h1>
       <p>
         Bonjour tout le monde,
         Je suis Keran Li, maintenant je suis enseignante chez Rebecca Yang Studio. J'ai étudié à Nantes en France
@@ -43,7 +43,7 @@ definePageMeta({
         voyageant.
       </p>
       <UImage src="/team/pic02.png" alt="Keran Li" />
-      <h1>Ailu <small>(Spanish<i i-twemoji-flag-spain />)</small></h1>
+      <h1>Ailu <small>(Spanish<UIcon class="align-middle" name="i-twemoji-flag-spain" />)</small></h1>
       <p>
         Hola todos, me llamo Ailu. Soy de Chengdu, el pueblo de Oso Panda. Ahora trabajo con Rebeca Yang a fin de
         propagar
@@ -61,7 +61,7 @@ definePageMeta({
         amigos y amigas, aprended chino con nosotros. Aprended chino con viajes.
       </p>
       <UImage src="/team/pic03.png" alt="Ailu" />
-      <h1>Monica <small>(English<i i-twemoji-flag-united-kingdom />)</small></h1>
+      <h1>Monica <small>(English<UIcon class="align-middle" name="i-twemoji-flag-united-kingdom" />)</small></h1>
       <p>
         Monica
         Hey, how are you? I'm Monica. I'm working in Rebecca Yang Studio now. Nice to meet you here. I majored in
@@ -73,7 +73,7 @@ definePageMeta({
         Chinese during travel.
       </p>
       <UImage src="/team/pic04.png" alt="Monica" />
-      <h1>Ling <small>(English<i i-twemoji-flag-united-kingdom />)</small></h1>
+      <h1>Ling <small>(English<UIcon class="align-middle" name="i-twemoji-flag-united-kingdom" />)</small></h1>
       <p>
         Hello, everyone ! I'm Ling.“Adhere to the pure ideal of your youth,Keeping your warm heart ready and being young
         forever.”This is my motto.I'm working in Rebecca Yang Studio now.I am a tour guide and team leader since 2015 ,
@@ -85,7 +85,7 @@ definePageMeta({
         hope our teaching is experiential immersion teaching. It's fun to learn Chinese during traveling.
       </p>
       <UImage src="/team/pic05.png" alt="Ling" />
-      <h1>Drizzle <small>(English<i i-twemoji-flag-united-kingdom />)</small></h1>
+      <h1>Drizzle <small>(English<UIcon class="align-middle" name="i-twemoji-flag-united-kingdom" />)</small></h1>
       <p>
         Hey，I’m Drizzle,and working in Rebecca Yang Studio now.Nice to meet you at here.I majored International Chinese
         Education and have 4 years of online and offline teaching experience. In addition to learning authentic Chinese

@@ -35,7 +35,7 @@ defineProps({
           class="button-detail self-end coursor-pointer relative mr-3 mb-3 px-2 py-1 bg-opacity-80 bg-purple-600 outline-none border-none overflow-hidden text-white float-right"
           :to="`/module/article/${article.id}`" tag="button">
           View details
-          <i inline-block i-carbon-caret-right vertical="text-top" />
+          <UIcon inline-block name="i-carbon-caret-right" class="align-middle" />
         </NuxtLink>
       </div>
     </div>

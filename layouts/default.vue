@@ -1,5 +1,5 @@
 <template>
-  <main class="lcot-app">
+  <main class="lcot-app" ref="app" id="lcot-app">
     <NavTop class="lcot-nav-top"></NavTop>
     <main class="lcot-main-content">
       <slot></slot>
@@ -12,6 +12,11 @@
 </template>
 
 <script setup>
+const app = ref(null)
+const route = useRoute()
+watch(() => route.fullPath, () => {
+  app.value?.scrollTo(0,0);
+})
 
 </script>
 
@@ -27,7 +32,7 @@
 }
 
 .lcot-nav-top {
-  @apply static sm:hidden;
+  @apply sticky top-0 sm:hidden z-[60];
 }
 
 .lcot-main-content {

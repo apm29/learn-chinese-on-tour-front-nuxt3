@@ -2,32 +2,32 @@
   <div class="">
     <UButton :ui="{ rounded: 'rounded-none', }" @click="toggleMenu()" block>
       <UIcon name="i-mdi-menu" />
-      Learn Chinese On Tour
+      {{$t('Learn Chinese On Tour')}}
     </UButton>
-    <USlideover v-model="showMenu" :ui="{ width: 'w-auto', wrapper: 'fixed inset-0 flex z-50 w-0', }" side="left"
-      :overlay="false">
+    <USlideover v-model="showMenu" :ui="slideoverUi" side="left" :overlay="false">
 
       <aside class="lcot-top-nav">
         <AppLogo></AppLogo>
         <UDivider class="my-3" />
-        <template v-for="link of links">
-          <UButton :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray" :icon="link.icon"
-            :label="link.label" :to="link.to" :class="isMainMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
-          </UButton>
-          <div class="flex flex-col pl-8" v-if="link.children">
-            <UButton v-for="subLink of link.children" variant="ghost" color="gray" :icon="subLink.icon"
-              :label="subLink.label" :to="subLink.to" class="nav-button"
-              :class="isSubMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
-            </UButton>
-          </div>
-        </template>
-        <UDivider class="my-3" />
-        <div class="flex-grow"></div>
         <div class="flex">
           <AppLocaleSwitch></AppLocaleSwitch>
           <div class="flex-grow"></div>
           <AppDarkModeSwitch></AppDarkModeSwitch>
         </div>
+        <UDivider class="my-3" />
+        <template v-for="link of links">
+          <UButton :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray" :icon="link.icon"
+            :label="$t(link.label)" :to="link.to" :class="isMainMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
+          </UButton>
+          <div class="flex flex-col pl-8" v-if="link.children">
+            <UButton v-for="subLink of link.children" variant="ghost" color="gray" :icon="subLink.icon"
+              :label="$t(subLink.label)" :to="subLink.to" class="nav-button"
+              :class="isSubMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
+            </UButton>
+          </div>
+        </template>
+
+
       </aside>
     </USlideover>
   </div>
@@ -139,6 +139,11 @@ const navButtonUi = {
   }
 }
 
+const slideoverUi = {
+  width: 'w-auto',
+  wrapper: 'fixed inset-0 flex z-50 w-0 bg-gray-200/30',
+}
+
 const route = useRoute()
 watch(() => route.fullPath, () => {
   toggleMenu(false)
@@ -147,7 +152,7 @@ watch(() => route.fullPath, () => {
 
 <style scoped>
 .lcot-top-nav {
-  @apply h-screen w-[65vw] px-2 py-3 border-r border-gray-300/50 dark:border-gray-700/60 overflow-y-auto overflow-x-visible dark:bg-gray-800/50 bg-white flex flex-col;
+  @apply h-screen w-[65vw] px-2 pt-12 pb-3 border-r border-gray-300/50 dark:border-gray-700/60 overflow-y-auto overflow-x-visible dark:bg-gray-800 bg-white flex flex-col shadow-md drop-shadow-lg;
 }
 
 .nav-button {

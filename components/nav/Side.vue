@@ -4,17 +4,17 @@
     <UDivider class="my-3" />
     <template v-for="link of links">
       <UButton v-if="!link.children" :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray"
-        :icon="link.icon" :label="link.label" :to="link.to"
+        :icon="link.icon" :label="$t(link.label)" :to="link.to"
         :class="isMainMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
       </UButton>
       <UPopover v-else :popper="{ arrow: true, placement: 'right' }" mode="hover">
         <UButton :ui="navButtonUi" variant="ghost" class="nav-button w-full" color="gray" :icon="link.icon"
-          :label="link.label">
+          :label="$t(link.label)">
         </UButton>
         <template #panel>
           <div class="flex flex-col">
             <UButton v-for="subLink of link.children" variant="ghost" color="gray" :icon="subLink.icon"
-              :label="subLink.label" :to="subLink.to" class="nav-button"
+              :label="$t(subLink.label)" :to="subLink.to" class="nav-button"
               :class="isSubMenu(link.to, $route) ? 'nav-active' : 'nav-inactive'">
             </UButton>
           </div>

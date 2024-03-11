@@ -1,4 +1,6 @@
 {
+  "Learn Chinese On Tour": "旅学中文",
+
   "message":"chinese",
   "home": "首页",
   "about-us": "关于我们",
@@ -21,5 +23,35 @@
   "Get Started":"开始学习",
   "1 on 1 Class":"1对1课程",
   "Meet Our Full-time Mandarin Teachers On tour in Hangzhou":"在杭州与我们的专职普通话老师见面",
-  "Why Us":"选择我们的理由"
+  "Why Us":"选择我们的理由",
+
+  "Home": "首页",
+  "About Us": "关于我们",
+  "Our service": "我们的服务",
+  "Our team": "我们的团队",
+  "Course on tours": "旅行课程",
+  "Online class": "在线课程",
+  "Offline class": "线下课程",
+  "School in Hangzhou": "学在杭州",
+  "Live in Hangzhou": "住在杭州",
+  "Tours in Hangzhou": "杭州旅游",
+  "About Chinese": "关于汉语",
+  "One Sentence A Day": "每日一句",
+  "Tongue Twisters": "绕口令",
+  "Traditional Culture": "传统文化",
+  "Spoken Chinese": "口语中文",
+  "Contact Us": "联系我们",
+
+  "English/Chinese Teacher": "英语/中文老师",
+  "French/Chinese Teacher": "法语/中文老师",
+  "Spanish/Chinese Teacher": "西班牙语/中文老师",
+  "Students Says...": "学生评价...",
+
+  "Why Us#1": "灵活性 - 您可以决定在何时何地与我们的私人普通话导师上课。",
+  "Why Us#2": "普通话学习材料 - 可访问我们所有的课程教材和在线课程。",
+  "Why Us#3": "我们在线上提供基础课程，线下接触真实文化。",
+  "Why Us#4": "优秀而经验丰富的教师 - 我们所有的导师都是教育部认证的。他们在组织和教学方面都经过高度培训和丰富经验，并愿意与对中国文化感兴趣和热爱的学生分享。他们全部获得导游证书。",
+  "Why Us#5": "我们是一个合法的本地中文学习公司，lcot-hangzhou.com是杭州合作国际教育机构全资拥有和经营的公司，是一家经政府许可的合法教育公司。",
+
+  "Get a free One-on-One trial lesson": "获取免费一对一试讲课程"
 }
