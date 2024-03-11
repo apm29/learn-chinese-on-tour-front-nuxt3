@@ -1,5 +1,5 @@
 <template>
-  <UForm :state="contactForm" ref="form" :validate="validate" @submit="onSubmit">
+  <UForm :state="contactForm" :validate-on="['input', 'change', 'submit']" ref="form" :validate="validate" @submit="onSubmit">
     <div class="grid grid-cols-2 gap-4 mb-12">
       <UFormGroup label="" name="fullName">
         <UInput placeholder="your fullname" :ui="inputUi" color="primary" v-model="contactForm.fullName" />
