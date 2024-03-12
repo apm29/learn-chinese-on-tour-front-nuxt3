@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AppUnderConstruction></AppUnderConstruction>
+    <AppUnderConstruction class="h-[90vh]"></AppUnderConstruction>
   </div>
 </template>
 
