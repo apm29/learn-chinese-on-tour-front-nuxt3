@@ -121,6 +121,7 @@ async function onSubmit() {
       contactForm.inquiry = ""
       contactForm.captcha = ""
       contactForm.uuid = generateUuid()
+      showCaptcha.value = false
     } else {
       console.log(response);
       toast.add({
