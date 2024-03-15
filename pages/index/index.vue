@@ -38,8 +38,5 @@ useHead({
   title: 'Dashboard',
 })
 
-definePageMeta({
-  pageTransition: { name: 'fade', mode: 'out-in' },
-})
 </script>
 

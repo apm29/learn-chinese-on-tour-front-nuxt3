@@ -3,9 +3,6 @@ useHead({
   title: 'Spoken Chinese',
 })
 
-definePageMeta({
-  pageTransition: { name: 'fade', mode: 'out-in' },
-})
 </script>
 
 <template>

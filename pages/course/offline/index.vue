@@ -10,9 +10,6 @@ useHead({
   title: 'Offline Class',
 })
 
-definePageMeta({
-  pageTransition: { name: 'fade', mode: 'out-in' },
-})
 </script>
 
 <template>

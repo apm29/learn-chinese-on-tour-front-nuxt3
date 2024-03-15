@@ -3,9 +3,6 @@ useHead({
   title: 'Traditional Culture',
 })
 
-definePageMeta({
-  pageTransition: { name: 'fade', mode: 'out-in' },
-})
 </script>
 
 <template>

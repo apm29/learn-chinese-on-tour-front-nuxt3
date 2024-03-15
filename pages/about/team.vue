@@ -3,9 +3,6 @@ useHead({
   title: 'Our Team',
 })
 
-definePageMeta({
-  pageTransition: { name: 'fade', mode: 'out-in' },
-})
 </script>
 
 <template>

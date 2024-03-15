@@ -8,6 +8,12 @@ export default defineNuxtConfig({
         target: 'https://next.lcot-hangzhou.com',
         changeOrigin: true
       }
+    },
+    // 该配置用于服务端请求转发
+    routeRules: {
+      '/java/**': {
+        proxy: 'https://next.lcot-hangzhou.com/java/**',
+      }
     }
   },
   // work in client
@@ -22,6 +28,14 @@ export default defineNuxtConfig({
     }
   },
   app: {
+    pageTransition: {
+      name: 'fade',
+      mode: 'out-in' // 默认值
+    },
+    layoutTransition: {
+      name: 'slide',
+      mode: 'out-in' // 默认值
+    },
     head: {
       title: '旅学中文',
       meta: [
