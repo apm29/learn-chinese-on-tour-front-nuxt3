@@ -3,6 +3,7 @@
     <NuxtPage />
   </NuxtLayout>
   <UNotifications />
+  <NuxtLoadingIndicator :throttle="0"/>
 </template>
 
 <style>

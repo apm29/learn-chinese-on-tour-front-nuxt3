@@ -20,6 +20,7 @@
   "devDependencies": {
     "@iconify/json": "^2.2.189",
     "@nuxt/content": "^2.12.0",
+    "@nuxt/image": "^1.4.0",
     "@nuxt/ui": "^2.14.2",
     "@nuxtjs/i18n": "^8.1.1",
     "@nuxtjs/robots": "^3.0.0",

@@ -17,7 +17,7 @@ const { isLoading } = useImage({ src: props.src })
   <div v-if="isLoading" class="loading">
     <span class="loading-text">Loading</span>
   </div>
-  <img v-else :src="src" v-bind="$attrs">
+  <NuxtImg v-else :src="src" v-bind="$attrs"/>
 </template>
 
 <style scoped>
