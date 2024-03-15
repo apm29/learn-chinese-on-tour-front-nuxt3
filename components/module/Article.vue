@@ -5,12 +5,7 @@ const props = defineProps({
     required: true,
   },
 })
-const { data: modules, pending } = await useFetch(
-  `/api/module-article/${props.module}`,
-  {
-    lazy: true
-  }
-)
+const { data: modules, pending } = await useLazyFetch(`/api/module-article/${props.module}`)
 </script>
 
 <template>
