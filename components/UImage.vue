@@ -14,31 +14,13 @@ const { isLoading } = useImage({ src: props.src })
 </script>
 
 <template>
-  <div v-if="isLoading" class="loading">
+  <div v-if="isLoading" class="flex items-center justify-center bg-gray-100 dark:bg-gray-800 animate-pulse" v-bind="$attrs">
     <span class="loading-text">Loading</span>
   </div>
-  <NuxtImg v-else :src="src" v-bind="$attrs"/>
+  <img v-else :src="src" v-bind="$attrs" />
 </template>
 
 <style scoped>
-.loading {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  color: #d3d3d3;
-  background-color: #ededed;
-  background: linear-gradient(
-      100deg,
-      rgba(255, 255, 255, 0) 40%,
-      rgba(255, 255, 255, 0.5) 50%,
-      rgba(255, 255, 255, 0) 60%
-    )
-    #ededed;
-  background-size: 200% 100%;
-  background-position-x: 180%;
-  animation: 1s loading ease-in-out infinite;
-}
 
 @keyframes loading {
   to {
@@ -58,9 +40,11 @@ const { isLoading } = useImage({ src: props.src })
   33.33% {
     content: ".";
   }
+
   66.67% {
     content: "..";
   }
+
   100% {
     content: "...";
   }

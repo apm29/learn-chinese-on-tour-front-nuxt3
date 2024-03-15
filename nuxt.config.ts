@@ -99,6 +99,5 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     "@nuxtjs/sitemap",
     '@nuxtjs/robots',
-    "@nuxt/image"
   ]
 })
