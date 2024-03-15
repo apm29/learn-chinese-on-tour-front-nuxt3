@@ -1,7 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  
+  nitro:{
+    devProxy:{
+      '/java':{
+        target: 'https://next.lcot-hangzhou.com',
+        prependPath: true,
+        changeOrigin: true
+      }
+    }
+  },
   app: {
     head: {
       title: '旅学中文',

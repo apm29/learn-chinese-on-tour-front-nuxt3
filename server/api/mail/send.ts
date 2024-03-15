@@ -3,7 +3,7 @@ import { BASE_URL } from '~~/const'
 export default defineEventHandler(async (event: any) => {
   const body = JSON.stringify(await readBody(event))
   const res = await $fetch(
-    `${BASE_URL}/java/auth/mail/sendIt`,
+    `${BASE_URL}/java/auth/mail/send`,
     {
       method: "POST",
       headers: {
