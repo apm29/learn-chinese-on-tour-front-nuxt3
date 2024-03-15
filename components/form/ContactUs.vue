@@ -1,5 +1,5 @@
 <template>
-  <ClientOnly>
+  <div>
     <UForm :state="contactForm" :validate-on="['input', 'change', 'submit']" ref="form" :validate="validateContact"
       @submit="onCaptcha">
       <div class="grid grid-cols-2 gap-4 mb-12">
@@ -43,7 +43,7 @@
         </UForm>
       </div>
     </UModal>
-  </ClientOnly>
+  </div>
 </template>
 
 <script setup>

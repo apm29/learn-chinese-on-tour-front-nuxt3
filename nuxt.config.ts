@@ -1,12 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  nitro:{
-    devProxy:{
-      '/java':{
+  // not work while in ssr mode
+  nitro: {
+    devProxy: {
+      '/java': {
         target: 'https://next.lcot-hangzhou.com',
-        prependPath: true,
         changeOrigin: true
+      }
+    }
+  },
+  // work in client
+  vite: {
+    server: {
+      proxy: {
+        '/java': {
+          target: 'https://next.lcot-hangzhou.com',
+          changeOrigin: true
+        }
       }
     }
   },
