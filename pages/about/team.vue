@@ -67,7 +67,6 @@ useHead({
           <UIcon class="align-middle" name="i-twemoji-flag-united-kingdom" />)
         </small></HashH1>
       <p>
-        Monica
         Hey, how are you? I'm Monica. I'm working in Rebecca Yang Studio now. Nice to meet you here. I majored in
         English And Chinese Education in college and have 5 years of online teaching experience. I'm good at
         communicating with students. Also have years of oral practical experience. Speaking like native speakers and
