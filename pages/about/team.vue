@@ -2,15 +2,14 @@
 useHead({
   title: 'Our Team',
 })
-const { scrollToAnchor } = useAnchorScroll()
 </script>
 
 <template>
   <div class="p-4 md:px-12 lg:max-w-[1000px] mx-auto text-gray-800/80 dark:text-gray-200/80">
     <article>
-      <h1 @click="scrollToAnchor('RebeccaYang')" id="RebeccaYang">Rebecca Yang <small>(English
+      <HashH1 id="RebeccaYang">Rebecca Yang <small>(English
           <UIcon class="align-middle" name="i-twemoji-flag-united-kingdom" />)
-        </small></h1>
+        </small></HashH1>
       <p>
         Hello everyone, it ‘s a pleasure to have friends from afar.Confucius sent out such an invitation as early as
         2500
@@ -27,9 +26,9 @@ const { scrollToAnchor } = useAnchorScroll()
         forward to seeing you !
       </p>
       <UImage class="teacher-img" src="/team/pic01.png" alt="Rebecca Yang" />
-      <h1 @click="scrollToAnchor('KeranLi')"id="KeranLi">Keran Li <small>(French
+      <HashH1 id="KeranLi">Keran Li <small>(French
           <UIcon class="align-middle" name="i-twemoji-flag-france" />)
-        </small></h1>
+        </small></HashH1>
       <p>
         Bonjour tout le monde,
         Je suis Keran Li, maintenant je suis enseignante chez Rebecca Yang Studio. J'ai étudié à Nantes en France
@@ -44,9 +43,9 @@ const { scrollToAnchor } = useAnchorScroll()
         voyageant.
       </p>
       <UImage class="teacher-img" src="/team/pic02.png" alt="Keran Li" />
-      <h1 @click="scrollToAnchor('Ailu')" id="Ailu">Ailu <small>(Spanish
+      <HashH1 id="Ailu">Ailu <small>(Spanish
           <UIcon class="align-middle" name="i-twemoji-flag-spain" />)
-        </small></h1>
+        </small></HashH1>
       <p>
         Hola todos, me llamo Ailu. Soy de Chengdu, el pueblo de Oso Panda. Ahora trabajo con Rebeca Yang a fin de
         propagar
@@ -64,9 +63,9 @@ const { scrollToAnchor } = useAnchorScroll()
         amigos y amigas, aprended chino con nosotros. Aprended chino con viajes.
       </p>
       <UImage class="teacher-img" src="/team/pic03.png" alt="Ailu" />
-      <h1 @click="scrollToAnchor('Monica')" id="Monica">Monica <small>(English
+      <HashH1 id="Monica">Monica <small>(English
           <UIcon class="align-middle" name="i-twemoji-flag-united-kingdom" />)
-        </small></h1>
+        </small></HashH1>
       <p>
         Monica
         Hey, how are you? I'm Monica. I'm working in Rebecca Yang Studio now. Nice to meet you here. I majored in
@@ -78,9 +77,9 @@ const { scrollToAnchor } = useAnchorScroll()
         Chinese during travel.
       </p>
       <UImage class="teacher-img" src="/team/pic04.png" alt="Monica" />
-      <h1 @click="scrollToAnchor('Ling')" id="Ling">Ling <small>(English
+      <HashH1 id="Ling">Ling <small>(English
           <UIcon class="align-middle" name="i-twemoji-flag-united-kingdom" />)
-        </small></h1>
+        </small></HashH1>
       <p>
         Hello, everyone ! I'm Ling.“Adhere to the pure ideal of your youth,Keeping your warm heart ready and being young
         forever.”This is my motto.I'm working in Rebecca Yang Studio now.I am a tour guide and team leader since 2015 ,
@@ -92,9 +91,9 @@ const { scrollToAnchor } = useAnchorScroll()
         hope our teaching is experiential immersion teaching. It's fun to learn Chinese during traveling.
       </p>
       <UImage class="teacher-img" src="/team/pic05.png" alt="Ling" />
-      <h1 @click="scrollToAnchor('Drizzle')" id="Drizzle">Drizzle <small>(English
+      <HashH1 id="Drizzle">Drizzle <small>(English
           <UIcon class="align-middle" name="i-twemoji-flag-united-kingdom" />)
-        </small></h1>
+        </small></HashH1>
       <p>
         Hey，I’m Drizzle,and working in Rebecca Yang Studio now.Nice to meet you at here.I majored International Chinese
         Education and have 4 years of online and offline teaching experience. In addition to learning authentic Chinese
@@ -124,10 +123,6 @@ small {
 p,
 h1 {
   @apply px-4;
-}
-
-h1 {
-  @apply cursor-pointer;
 }
 
 small i {
