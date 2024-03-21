@@ -99,5 +99,14 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     "@nuxtjs/sitemap",
     '@nuxtjs/robots',
-  ]
+    'nuxt-anchorscroll',
+  ],
+
+  anchorscroll: {
+    hooks: [
+      // Or any valid hook if needed
+      // Default is `page:finish`
+      'page:transition:finish',
+    ],
+  },
 })

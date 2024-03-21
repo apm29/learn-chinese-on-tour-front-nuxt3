@@ -13,18 +13,13 @@
 </template>
 
 <script setup>
-const app = ref(null)
-const route = useRoute()
-watch(() => route.fullPath, () => {
-  app.value?.scrollTo(0,0);
-})
-
 </script>
 
 <style scoped>
 .lcot-app {
   @apply h-screen w-screen;
-  overflow: overlay;
+  /* overflow: overlay; */
+  /* scroll-behavior: smooth; */
 }
 
 .lcot-nav-left {

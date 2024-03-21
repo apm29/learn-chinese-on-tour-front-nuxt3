@@ -2,6 +2,25 @@
   --sidenav-width: 200px;
 }
 
+html {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    div#__nuxt {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
 @font-face {
   font-family: "Chinyen";
   font-weight: normal;
@@ -10,7 +29,7 @@
 
 .chinyen {
   font-style: normal;
-  font-family: "Chinyen", cursive!important;
+  font-family: "Chinyen", cursive !important;
 }
 
 .nav-active {

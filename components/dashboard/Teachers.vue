@@ -18,7 +18,7 @@ const { data: teachers, pending } = useLazyFetch('/api/teachers')
       </div>
     </template>
     <template v-else>
-      <div v-for="teacher of teachers" :key="teacher.name"
+      <NuxtLink prefetch :to="`/about/team#${teacher.id}`" v-for="teacher of teachers" :key="teacher.name"
         class="bg-white dark:bg-gray-800 rounded-lg px-4 pt-3 pb-6 flex flex-col items-start duration-300 transition-all text-left border-2 border-transparent hover:border-gray-200 dark:hover:border-gray-600 hover:opacity-90 hover:shadow-2xl dark:shadow-gray-600">
         <UAvatar :src="teacher.pic" size="3xl"
           class="self-center mb-4 shadow-xl drop-shadow-lg dark:shadow-slate-600 dark:drop-shadow-slate-600" :ui="{ size: {'3xl': 'h-24 w-24 text-3xl',} }"/>
@@ -35,7 +35,7 @@ const { data: teachers, pending } = useLazyFetch('/api/teachers')
         <div class="text-gray-700/80 dark:text-gray-200/50 font-sans indent-[2em] leading-snug">
           {{ $t(teacher.desc) }}
         </div>
-      </div>
+      </NuxtLink>
     </template>
   </div>
 </template>
