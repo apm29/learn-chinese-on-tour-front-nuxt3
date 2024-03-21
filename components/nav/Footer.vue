@@ -6,9 +6,9 @@
     class="text-sm text-gray-400 py-3 px-4 flex flex-col max-w-[32rem] mx-auto"
   >
     <!-- 联系我们 -->
-    <a target="_self" href="mailto:409308758@qq.com">
+    <a target="_self" href="mailto:lcothangzhou@163.com">
       <i class="i-mdi-email" />
-      <span>409308758@qq.com</span>
+      <span>lcothangzhou@163.com</span>
     </a>
     <a target="_blank" href="https://wx.qq.com/">
       <i class="i-mdi-wechat" />

@@ -36,7 +36,7 @@ useHead({
     <h2 v-else class="text-white text-lg text-center font-bold mb-12">
       Get in touch with our team to discuss your plan.
     </h2>
-    <FormContactUs></FormContactUs>
+    <FormContactUs class="z-10"></FormContactUs>
   </div>
 </template>
 
