@@ -30,6 +30,7 @@
     "@vueuse/nuxt": "^10.9.0",
     "dayjs-nuxt": "^2.1.9",
     "nuxt": "^3.10.3",
-    "nuxt-anchorscroll": "^1.0.3"
+    "nuxt-anchorscroll": "^1.0.3",
+    "nuxt-aos": "^1.2.4"
   }
 }

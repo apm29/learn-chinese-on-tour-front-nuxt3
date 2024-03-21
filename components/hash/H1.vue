@@ -1,17 +1,17 @@
 <template>
-  <h1 :id="id" class="group" >
+  <h1 :id="`fixed-${id}`" class="group" >
     <slot></slot>
-    <NuxtLink @click="scrollToAnchor(id)" :href="`#${id}`" class="group-hover:visible invisible opacity-50 cursor-pointer">#</NuxtLink>
+    <NuxtLink @click="scrollToAnchor(`fixed-${id}`)" :href="`#${id}`" class="group-hover:visible invisible opacity-50 cursor-pointer">#</NuxtLink>
   </h1>
 </template>
 
-<script setup>
-const { scrollToAnchor } = useAnchorScroll()
+<script setup lang="js">
 defineProps({
   id: {
     type: String,
   }
 })
+const { scrollToAnchor } = useAnchorScroll()
 </script>
 
 <style>

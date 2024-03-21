@@ -17,7 +17,7 @@
 
 <style scoped>
 .lcot-app {
-  @apply h-screen w-screen;
+  /* @apply h-screen w-screen; */
   /* overflow: overlay; */
   /* scroll-behavior: smooth; */
 }

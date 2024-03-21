@@ -33,7 +33,7 @@ const { data: teachers, pending } = useLazyFetch('/api/teachers')
           {{ $t('Students Says...') }}
         </div>
         <div class="text-gray-700/80 dark:text-gray-200/50 font-sans indent-[2em] leading-snug">
-          {{ $t(teacher.desc) }}
+          {{ teacher.desc }}
         </div>
       </NuxtLink>
     </template>
