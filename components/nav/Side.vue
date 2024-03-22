@@ -72,7 +72,7 @@ const links = [
     ]
   },
   {
-    label: 'Live in Hangzhou',
+    label: 'About Hangzhou',
     icon: 'i-mdi-city-variant',
     to: '/live',
     children: [
@@ -134,7 +134,7 @@ function isSubMenu(to, $route) {
 const navButtonUi = {
   color: {
     gray: {
-      ghost: 'text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-primary-200 dark:hover:bg-primary-800 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 focus:text-primary mb-2'
+      ghost: 'text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-primary-200 dark:hover:bg-primary-800 focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 focus:text-primary mb-2 whitespace-nowrap'
     }
   }
 }

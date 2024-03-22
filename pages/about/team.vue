@@ -89,7 +89,7 @@ useHead({
         modest are my attitude during my lessons, i love kids very much ,they are lovely angels ! I like traveling，I
         hope our teaching is experiential immersion teaching. It's fun to learn Chinese during traveling.
       </p>
-      <UImage class="teacher-img" src="/team/pic05.png" alt="Ling" />
+      <UImage class="teacher-img" src="/team/pic05.jpg" alt="Ling" />
       <HashH1 id="Drizzle">Drizzle <small>(English
           <UIcon class="align-middle" name="i-twemoji-flag-united-kingdom" />)
         </small></HashH1>

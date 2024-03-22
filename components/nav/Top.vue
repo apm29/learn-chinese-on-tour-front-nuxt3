@@ -73,7 +73,7 @@ const links = [
     ]
   },
   {
-    label: 'Live in Hangzhou',
+    label: 'About Hangzhou',
     icon: 'i-mdi-city-variant',
     children: [
       {
