@@ -180,6 +180,7 @@
 
         <UImage class="gallery-item" src="/tour/image25.jpeg"></UImage>
         <UImage class="gallery-item" src="/tour/image26.jpeg"> </UImage>
+        <UImage class="gallery-item" src="/tour/image32.jpeg"> </UImage>
 
       </div>
     </div>
