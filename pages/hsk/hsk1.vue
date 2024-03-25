@@ -36,8 +36,11 @@ useHead({
           <th colspan="2">
             Section
           </th>
+          <th  colspan="2">
+            Number of Items 
+          </th>
           <th>
-            Number of Items Duration (Min)
+            Duration (Min)
           </th>
         </tr>
       </thead>
@@ -48,6 +51,8 @@ useHead({
           </td>
           <td>Part I</td>
           <td>5</td>
+          <td rowspan="4">20</td>
+          <td rowspan="4">About 15</td>
         </tr>
         <tr>
           <td>Part II</td>
@@ -62,9 +67,10 @@ useHead({
           <td>5</td>
         </tr>
         <tr>
-          <td colspan="3">
+          <td colspan="4">
             Filling out the answer sheet(Mark your answers for listening comprehension on Answer Sheet) 3
           </td>
+          <td>5</td>
         </tr>
         <tr>
           <td rowspan="4">
@@ -72,6 +78,8 @@ useHead({
           </td>
           <td>Part I</td>
           <td>5</td>
+          <td rowspan="4">20</td>
+          <td rowspan="4">17</td>
         </tr>
         <tr>
           <td>Part II</td>
@@ -88,7 +96,8 @@ useHead({
         <tr>
           <td>Total</td>
           <td>/</td>
-          <td>40</td>
+          <td colspan="2">40</td>
+          <td >About 35</td>
         </tr>
       </tbody>
     </table>
@@ -181,6 +190,7 @@ table {
 
 td, th {
   @apply border-r border-b px-3 py-2;
+  vertical-align: middle;
 }
 
 p {
