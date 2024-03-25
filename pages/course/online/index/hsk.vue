@@ -43,12 +43,18 @@
           characters writing practice and mock HSK tests.
         </li>
       </ul>
+
+      <UImage src="/hsk/hsk1.jpg"/>
+      <UImage src="/hsk/hsk2.jpg"/>
+      <UImage src="/hsk/hsk3.jpg"/>
     </article>
   </div>
 </template>
 
 <script setup>
-
+useHead({
+  title: 'HSK',
+})
 </script>
 
 <style lang="scss" scoped></style>
