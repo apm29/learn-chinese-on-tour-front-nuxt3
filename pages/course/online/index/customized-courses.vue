@@ -57,4 +57,8 @@ useHead({
   content: "——";
   /* 横线内容 */
 }
+
+.gallery-item {
+  @apply aspect-[9/14];
+}
 </style>
