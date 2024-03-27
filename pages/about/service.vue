@@ -28,6 +28,12 @@ useHead({
         Provide all-around teaching services online and offline.
         Perfectly combine Intercultural Communication and International Chinese Teaching on tour.
       </p>
+
+      <p>
+        <video controls class="mx-auto mt-12 max-w-[500px]">
+          <source src="/service/service.mp4" type="video/mp4">
+        </video>
+      </p>
     </article>
   </div>
 </template>

@@ -13,10 +13,10 @@
 
     <div class="pic-gallery text-center sm:grid sm:grid-cols-2 sm:grid-row-2 gap-2" data-aos="fade-up">
 
-      <UImage class="gallery-item" src="/customized-courses/image6.jpeg"> </UImage>
-      <UImage class="gallery-item" src="/customized-courses/image7.jpeg"></UImage>
-      <UImage class="gallery-item" src="/customized-courses/image8.jpeg"></UImage>
-      <UImage class="gallery-item" src="/customized-courses/image9.jpeg"></UImage>
+      <UImage class="gallery-item" src="/customized-courses/image2.jpeg"> </UImage>
+      <UImage class="gallery-item" src="/customized-courses/image3.jpeg"></UImage>
+      <UImage class="gallery-item" src="/customized-courses/image4.jpeg"></UImage>
+      <UImage class="gallery-item" src="/customized-courses/image5.jpeg"></UImage>
 
     </div>
 
@@ -30,10 +30,11 @@
 
     <div class="pic-gallery text-center sm:grid sm:grid-cols-2 sm:grid-row-2 gap-2" data-aos="fade-up">
 
-      <UImage class="gallery-item" src="/customized-courses/image2.jpeg"> </UImage>
-      <UImage class="gallery-item" src="/customized-courses/image3.jpeg"></UImage>
-      <UImage class="gallery-item" src="/customized-courses/image4.jpeg"></UImage>
-      <UImage class="gallery-item" src="/customized-courses/image5.jpeg"></UImage>
+      <UImage class="gallery-item" src="/customized-courses/image6.jpeg"> </UImage>
+      <UImage class="gallery-item" src="/customized-courses/image7.jpeg"></UImage>
+      <UImage class="gallery-item" src="/customized-courses/image8.jpeg"></UImage>
+      <UImage class="gallery-item" src="/customized-courses/image9.jpeg"></UImage>
+      
 
     </div>
   </article>
