@@ -22,6 +22,17 @@
         qualities.
       </li>
     </ol>
+
+    <div class="pic-gallery text-center sm:grid sm:grid-cols-5 gap-2" data-aos="fade-up">
+
+      <UImage class="gallery-item" src="/business-chinese/image1.png"> </UImage>
+      <UImage class="gallery-item" src="/business-chinese/image2.png"> </UImage>
+      <UImage class="gallery-item" src="/business-chinese/image3.png"></UImage>
+      <UImage class="gallery-item" src="/business-chinese/image4.png"></UImage>
+      <UImage class="gallery-item" src="/business-chinese/image5.png"></UImage>
+
+    </div>
+
   </article>
 </template>
 
@@ -43,5 +54,9 @@ useHead({
   /* 设置横线的样式 */
   content: "——";
   /* 横线内容 */
+}
+
+.gallery-item {
+  @apply aspect-[9/13];
 }
 </style>
