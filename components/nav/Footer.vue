@@ -26,6 +26,10 @@
       <i class="i-mdi-phone" />
       <span>24-hour courses line: +8618814816658(English)</span>
     </a>
+    <picture>
+      <img src="/LCOT_Hangzhou.jpg"/>
+      <caption><i class="i-mdi-wechat align-middle" /> scan code to follow WeChat official account</caption>
+    </picture>
   </div>
 </template>
 
