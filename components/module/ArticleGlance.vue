@@ -10,14 +10,14 @@ defineProps({
 
 <template>
   <div
-    class="flex flex-col md:grid md:grid-cols-8 gap-3 mb-8 border border-gray-300 border-opacity-50 rounded-xl hover:shadow-2xl">
+    class="flex flex-col md:grid md:grid-cols-8 gap-3 mb-8 border border-gray-300 border-opacity-50 rounded-xl hover:shadow-2xl md:max-h-[225px] overflow-hidden">
     <UImage :src="article.banner" :alt="article.title"
-      class="col-span-3 border border-transparent rounded-t-xl md:rounded-r-none md:rounded-l-xl h-full object-cover" />
+      class="col-span-3 border border-transparent rounded-t-xl md:rounded-r-none md:rounded-l-xl h-[225px] md:w-[250px] object-cover" />
     <div class="col-span-full md:col-span-5 flex flex-col items-stretch text-left py-2 px-4">
       <NuxtLink class="!page-link text-xl my-4 font-bold" :to="`/module/article/${article.id}`" tag="h3">
         {{ article.title }}
       </NuxtLink>
-      <p break-all text="gray-500 sm">
+      <p break-all text="gray-500 sm" style="flex-grow: 1;">
         {{ filterHtml(article.content) }}...
       </p>
       <p v-if="article.subject">
