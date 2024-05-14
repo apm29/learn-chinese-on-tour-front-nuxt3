@@ -49,7 +49,7 @@ export default defineNuxtConfig({
         { name: 'format-detection', content: 'telephone=no' },
         {
           name: 'keywords',
-          content: 'chinese, tour, learn chinese, hangzhou tour, online course, offline course'
+          content: 'chinese, tour, learn chinese, hangzhou tour, online course, offline course, hangzhou learn chinese, hangzhou, foreigners learn chinese, Chinese-English bilingual tour'
         }
       ],
       link: [
@@ -72,7 +72,7 @@ export default defineNuxtConfig({
   },
 
   ui: {
-    icons: ['mdi', 'heroicons', 'carbon', 'twemoji'],
+    icons: ['mdi', 'heroicons', 'carbon', 'twemoji','simple-icons'],
   },
 
   i18n: {

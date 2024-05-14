@@ -77,9 +77,9 @@ const links = [
     to: '/live',
     children: [
       {
-        label: 'School in Hangzhou',
-        icon: 'i-mdi-school',
-        to: '/live/school',
+        label: 'News in Hangzhou',
+        icon: 'i-mdi-newspaper',
+        to: '/live/news',
       },
       {
         label: 'Tours in Hangzhou',

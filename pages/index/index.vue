@@ -35,7 +35,7 @@
 
 <script setup>
 useHead({
-  title: 'Dashboard',
+  title: 'Learn Chinese On Tour: 旅学中文',
 })
 
 </script>
