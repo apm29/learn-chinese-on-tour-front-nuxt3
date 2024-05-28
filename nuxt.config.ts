@@ -40,6 +40,7 @@ export default defineNuxtConfig({
       title: '旅学中文',
       meta: [
         { charset: 'utf-8' },
+        { name: "baidu-site-verification", content: "codeva-lMY1gq29em" },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           hid: 'description',
@@ -72,7 +73,7 @@ export default defineNuxtConfig({
   },
 
   ui: {
-    icons: ['mdi', 'heroicons', 'carbon', 'twemoji','simple-icons'],
+    icons: ['mdi', 'heroicons', 'carbon', 'twemoji', 'simple-icons'],
   },
 
   i18n: {
