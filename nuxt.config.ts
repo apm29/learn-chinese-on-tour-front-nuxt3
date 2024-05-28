@@ -27,6 +27,10 @@ export default defineNuxtConfig({
       }
     }
   },
+  robots: {
+		UserAgent: '*',
+		Allow: '*',
+	},
   app: {
     pageTransition: {
       name: 'fade',
