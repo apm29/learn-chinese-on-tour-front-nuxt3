@@ -31,6 +31,9 @@ export default defineNuxtConfig({
 		UserAgent: '*',
 		Allow: '*',
 	},
+  site: {
+    url: 'https://www.lcot-hangzhou.com',
+  },
   app: {
     pageTransition: {
       name: 'fade',
@@ -133,7 +136,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     '@nuxtjs/tailwindcss',
     "@nuxtjs/sitemap",
-    '@nuxtjs/robots',
+    '@nuxtjs/seo',
     'nuxt-anchorscroll',
     'nuxt-aos',
   ],
