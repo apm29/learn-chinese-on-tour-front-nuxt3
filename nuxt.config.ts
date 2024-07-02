@@ -5,14 +5,14 @@ export default defineNuxtConfig({
   nitro: {
     devProxy: {
       '/java': {
-        target: 'https://next.lcot-hangzhou.com',
+        target: 'https://lcot-hangzhou.com',
         changeOrigin: true
       }
     },
     // 该配置用于服务端请求转发
     routeRules: {
       '/java/**': {
-        proxy: 'https://next.lcot-hangzhou.com/java/**',
+        proxy: 'https://lcot-hangzhou.com/java/**',
       }
     }
   },
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     server: {
       proxy: {
         '/java': {
-          target: 'https://next.lcot-hangzhou.com',
+          target: 'https://lcot-hangzhou.com',
           changeOrigin: true
         }
       }
